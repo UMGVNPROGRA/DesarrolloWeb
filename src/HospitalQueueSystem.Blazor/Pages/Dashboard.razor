@@ -1,0 +1,270 @@
+﻿@page "/dashboard"
+@using HospitalQueueSystem.Blazor.Services
+@using HospitalQueueSystem.Models
+@inject TurnosService TurnosService
+@inject NavigationManager Navigation
+@inject IJSRuntime JSRuntime
+
+<div class="dashboard-container">
+    <div class="header">
+        <h1>🏥 Sistema de Colas Hospitalarias</h1>
+        <div class="user-info">
+            <span>Bienvenido, <strong>@userName</strong> (@userRole)</span>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <!-- Panel de Preclasificación -->
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    <h5>📝 Preclasificación</h5>
+                </div>
+                <div class="card-body">
+                    <button class="btn btn-success w-100 mb-3" @onclick="ShowNuevoPaciente">
+                        ➕ Nuevo Paciente
+                    </button>
+
+                    @if (showNuevoPaciente)
+                    {
+                        <div class="nuevo-paciente-form">
+                            <h6>Registrar Nuevo Paciente</h6>
+                            <EditForm Model="@nuevoPaciente" OnValidSubmit="@RegistrarPaciente">
+                                <div class="form-group">
+                                    <label>Nombre Completo:</label>
+                                    <InputText @bind-Value="nuevoPaciente.Nombre" class="form-control" />
+                                </div>
+                                <div class="form-group">
+                                    <label>Identificación:</label>
+                                    <InputText @bind-Value="nuevoPaciente.Identificacion" class="form-control" />
+                                </div>
+                                <div class="form-group">
+                                    <label>Fecha Nacimiento:</label>
+                                    <InputDate @bind-Value="nuevoPaciente.FechaNacimiento" class="form-control" />
+                                </div>
+                                <div class="form-group">
+                                    <label>Género:</label>
+                                    <InputSelect @bind-Value="nuevoPaciente.Genero" class="form-control">
+                                        <option value="">Seleccionar...</option>
+                                        <option value="Masculino">Masculino</option>
+                                        <option value="Femenino">Femenino</option>
+                                        <option value="Otro">Otro</option>
+                                    </InputSelect>
+                                </div>
+                                <div class="form-group">
+                                    <label>Síntomas:</label>
+                                    <InputTextArea @bind-Value="nuevoPaciente.Sintomas" class="form-control" rows="3" />
+                                </div>
+                                <div class="form-group">
+                                    <label>Asignar a Clínica:</label>
+                                    <InputSelect @bind-Value="clinicaSeleccionada" class="form-control">
+                                        <option value="0">Seleccionar clínica...</option>
+                                        @foreach (var clinica in clinicas)
+                                        {
+                                            <option value="@clinica.Id">@clinica.Nombre</option>
+                                        }
+                                    </InputSelect>
+                                </div>
+                                <div class="d-flex gap-2">
+                                    <button type="submit" class="btn btn-primary">Registrar y Asignar Turno</button>
+                                    <button type="button" class="btn btn-secondary" @onclick="CancelarRegistro">Cancelar</button>
+                                </div>
+                            </EditForm>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+
+        <!-- Colas por Clínica -->
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <h5>📊 Colas de Turnos</h5>
+                    <button class="btn btn-warning" @onclick="AbrirDisplay">
+                        🖥️ Ver Pantalla Display
+                    </button>
+                </div>
+                <div class="card-body">
+                    @if (clinicas.Any())
+                    {
+                        @foreach (var clinica in clinicas)
+                        {
+                            <div class="clinica-colas mb-4">
+                                <h6>@clinica.Nombre</h6>
+                                <div class="turnos-list">
+                                    @if (turnosPorClinica.ContainsKey(clinica.Id) && turnosPorClinica[clinica.Id].Any())
+                                    {
+                                        foreach (var turno in turnosPorClinica[clinica.Id])
+                                        {
+                                            <div class="turno-item @GetTurnoClass(turno.Estado)">
+                                                <div class="turno-info">
+                                                    <strong>Turno @turno.NumeroTurno</strong>
+                                                    <span>@turno.Paciente?.Nombre</span>
+                                                    <small class="badge @GetBadgeClass(turno.Estado)">@turno.Estado</small>
+                                                </div>
+                                                <div class="turno-actions">
+                                                    @if (turno.Estado == "Pendiente" && (userRole == "Medico" || userRole == "Enfermero"))
+                                                    {
+                                                        <button class="btn btn-sm btn-primary" @onclick="() => LlamarTurno(turno.Id)">
+                                                            📢 Llamar
+                                                        </button>
+                                                    }
+                                                    @if (turno.Estado == "Llamado" && userRole == "Medico")
+                                                    {
+                                                        <button class="btn btn-sm btn-success" @onclick="() => AtenderTurno(turno.Id)">
+                                                            ✅ Atender
+                                                        </button>
+                                                    }
+                                                </div>
+                                            </div>
+                                        }
+                                    }
+                                    else
+                                    {
+                                        <div class="no-turnos">📭 No hay turnos en espera</div>
+                                    }
+                                </div>
+                            </div>
+                        }
+                    }
+                    else
+                    {
+                        <div class="alert alert-info">
+                            Cargando clínicas...
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private List<Clinica> clinicas = new();
+    private Dictionary<int, List<Turno>> turnosPorClinica = new();
+    private bool showNuevoPaciente = false;
+    private Paciente nuevoPaciente = new();
+    private int clinicaSeleccionada = 0;
+    private string userName = string.Empty;
+    private string userRole = string.Empty;
+
+    protected override async Task OnInitializedAsync()
+    {
+        // Verificar autenticación
+        await CheckAuthentication();
+        await CargarDatosUsuario();
+        await CargarDatos();
+    }
+
+    private async Task CheckAuthentication()
+    {
+        try
+        {
+            var token = await JSRuntime.InvokeAsync<string>("localStorage.getItem", "authToken");
+            if (string.IsNullOrEmpty(token))
+            {
+                Navigation.NavigateTo("/login");
+                return;
+            }
+        }
+        catch
+        {
+            Navigation.NavigateTo("/login");
+        }
+    }
+
+    private async Task CargarDatosUsuario()
+    {
+        try
+        {
+            userName = await JSRuntime.InvokeAsync<string>("localStorage.getItem", "userName") ?? "Usuario";
+            userRole = await JSRuntime.InvokeAsync<string>("localStorage.getItem", "userRole") ?? "Recepcion";
+        }
+        catch
+        {
+            userName = "Usuario";
+            userRole = "Recepcion";
+        }
+    }
+
+    private async Task CargarDatos()
+    {
+        try
+        {
+            clinicas = await TurnosService.GetClinicasAsync() ?? new();
+
+            foreach (var clinica in clinicas)
+            {
+                var turnos = await TurnosService.GetTurnosPorClinicaAsync(clinica.Id) ?? new();
+                turnosPorClinica[clinica.Id] = turnos;
+            }
+            StateHasChanged();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error cargando datos: {ex.Message}");
+        }
+    }
+
+    private void ShowNuevoPaciente() => showNuevoPaciente = true;
+
+    private void CancelarRegistro()
+    {
+        showNuevoPaciente = false;
+        nuevoPaciente = new();
+        clinicaSeleccionada = 0;
+    }
+
+    private async Task RegistrarPaciente()
+    {
+        if (clinicaSeleccionada == 0)
+        {
+            // Aquí podrías mostrar un mensaje de error
+            return;
+        }
+
+        // Por simplicidad, solo recargamos los datos
+        await CargarDatos();
+        CancelarRegistro();
+    }
+
+    private async Task LlamarTurno(int turnoId)
+    {
+        try
+        {
+            await TurnosService.LlamarTurnoAsync(turnoId);
+            await CargarDatos();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error llamando turno: {ex.Message}");
+        }
+    }
+
+    private async Task AtenderTurno(int turnoId)
+    {
+        // Por ahora solo recargamos datos
+        await CargarDatos();
+    }
+
+    private void AbrirDisplay()
+    {
+        Navigation.NavigateTo("/display", true);
+    }
+
+    private string GetTurnoClass(string estado) => estado switch
+    {
+        "Llamado" => "llamado",
+        "EnAtencion" => "en-atencion",
+        _ => "pendiente"
+    };
+
+    private string GetBadgeClass(string estado) => estado switch
+    {
+        "Llamado" => "bg-warning",
+        "EnAtencion" => "bg-success",
+        "Atendido" => "bg-secondary",
+        _ => "bg-info"
+    };
+}

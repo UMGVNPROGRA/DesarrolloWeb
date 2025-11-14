@@ -1,0 +1,12 @@
+D:\Documentos\Repositorios\DesarrolloWeb9.0\HospitalQueueSystem\src\HospitalQueueSystem.Models\bin\Debug\net9.0\HospitalQueueSystem.Models.deps.json
+D:\Documentos\Repositorios\DesarrolloWeb9.0\HospitalQueueSystem\src\HospitalQueueSystem.Models\bin\Debug\net9.0\HospitalQueueSystem.Models.dll
+D:\Documentos\Repositorios\DesarrolloWeb9.0\HospitalQueueSystem\src\HospitalQueueSystem.Models\bin\Debug\net9.0\HospitalQueueSystem.Models.pdb
+D:\Documentos\Repositorios\DesarrolloWeb9.0\HospitalQueueSystem\src\HospitalQueueSystem.Models\obj\Debug\net9.0\HospitalQueueSystem.Models.csproj.AssemblyReference.cache
+D:\Documentos\Repositorios\DesarrolloWeb9.0\HospitalQueueSystem\src\HospitalQueueSystem.Models\obj\Debug\net9.0\HospitalQueueSystem.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documentos\Repositorios\DesarrolloWeb9.0\HospitalQueueSystem\src\HospitalQueueSystem.Models\obj\Debug\net9.0\HospitalQueueSystem.Models.AssemblyInfoInputs.cache
+D:\Documentos\Repositorios\DesarrolloWeb9.0\HospitalQueueSystem\src\HospitalQueueSystem.Models\obj\Debug\net9.0\HospitalQueueSystem.Models.AssemblyInfo.cs
+D:\Documentos\Repositorios\DesarrolloWeb9.0\HospitalQueueSystem\src\HospitalQueueSystem.Models\obj\Debug\net9.0\HospitalQueueSystem.Models.csproj.CoreCompileInputs.cache
+D:\Documentos\Repositorios\DesarrolloWeb9.0\HospitalQueueSystem\src\HospitalQueueSystem.Models\obj\Debug\net9.0\HospitalQueueSystem.Models.dll
+D:\Documentos\Repositorios\DesarrolloWeb9.0\HospitalQueueSystem\src\HospitalQueueSystem.Models\obj\Debug\net9.0\refint\HospitalQueueSystem.Models.dll
+D:\Documentos\Repositorios\DesarrolloWeb9.0\HospitalQueueSystem\src\HospitalQueueSystem.Models\obj\Debug\net9.0\HospitalQueueSystem.Models.pdb
+D:\Documentos\Repositorios\DesarrolloWeb9.0\HospitalQueueSystem\src\HospitalQueueSystem.Models\obj\Debug\net9.0\ref\HospitalQueueSystem.Models.dll

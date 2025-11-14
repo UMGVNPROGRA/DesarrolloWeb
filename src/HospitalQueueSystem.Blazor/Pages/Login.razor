@@ -1,0 +1,138 @@
+@page "/login"
+@using HospitalQueueSystem.Models
+@using HospitalQueueSystem.Blazor.Services
+@inject AuthService AuthService
+@inject NavigationManager Navigation
+@inject IJSRuntime JSRuntime
+
+<div class="login-container">
+    <div class="login-card">
+        <h2>Hospital Queue System</h2>
+        <h4>Iniciar Sesion</h4>
+
+        <EditForm Model="@loginRequest" OnValidSubmit="@HandleLogin">
+            <div class="form-group">
+                <label>Email:</label>
+                <InputText @bind-Value="loginRequest.Email" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label>Password:</label>
+                <InputText type="password" @bind-Value="loginRequest.Password" class="form-control" />
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block" disabled="@isLoading">
+                @if (isLoading)
+                {
+                    <span>Ingresando...</span>
+                }
+                else
+                {
+                    <span>Ingresar</span>
+                }
+            </button>
+        </EditForm>
+
+        @if (!string.IsNullOrEmpty(errorMessage))
+        {
+            <div class="alert alert-danger mt-3">
+                @errorMessage
+            </div>
+        }
+
+        <div class="demo-accounts mt-4">
+            <h6>Cuentas de Demo:</h6>
+            <div class="demo-account" @onclick='() => FillDemo("admin")'>
+                <strong>Recepcion:</strong> admin@hospital.com / admin123
+            </div>
+            <div class="demo-account" @onclick='() => FillDemo("medico")'>
+                <strong>Medico:</strong> juan.perez@hospital.com / medico123
+            </div>
+            <div class="demo-account" @onclick='() => FillDemo("enfermero")'>
+                <strong>Enfermero:</strong> maria.lopez@hospital.com / enfermero123
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private LoginRequest loginRequest = new();
+    private bool isLoading = false;
+    private string errorMessage = string.Empty;
+
+    protected override async Task OnInitializedAsync()
+    {
+        // Verificar si ya está autenticado
+        await CheckExistingAuth();
+    }
+
+    private async Task CheckExistingAuth()
+    {
+        try
+        {
+            var token = await JSRuntime.InvokeAsync<string>("localStorage.getItem", "authToken");
+            if (!string.IsNullOrEmpty(token))
+            {
+                Navigation.NavigateTo("/dashboard");
+            }
+        }
+        catch
+        {
+            // Ignorar errores
+        }
+    }
+
+    private async Task HandleLogin()
+    {
+        isLoading = true;
+        errorMessage = string.Empty;
+        StateHasChanged();
+
+        try
+        {
+            Console.WriteLine($"🔍 Iniciando proceso de login...");
+
+            var response = await AuthService.LoginAsync(loginRequest);
+
+            if (response != null && !string.IsNullOrEmpty(response.Token))
+            {
+                Console.WriteLine($"✅ Token recibido: {response.Token.Substring(0, 20)}...");
+
+                AuthService.SetAuthToken(response.Token);
+                await JSRuntime.InvokeVoidAsync("localStorage.setItem", "authToken", response.Token);
+                await JSRuntime.InvokeVoidAsync("localStorage.setItem", "userName", response.Nombre);
+                await JSRuntime.InvokeVoidAsync("localStorage.setItem", "userRole", response.Rol);
+
+                Console.WriteLine($"🔄 Redirigiendo a dashboard...");
+                Navigation.NavigateTo("/dashboard");
+            }
+            else
+            {
+                errorMessage = "Credenciales incorrectas o error de conexión";
+                Console.WriteLine($"❌ Login falló - respuesta nula o sin token");
+            }
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Error de conexión: {ex.Message}";
+            Console.WriteLine($"💥 Excepción en login: {ex}");
+        }
+        finally
+        {
+            isLoading = false;
+            StateHasChanged();
+        }
+    }
+
+    private void FillDemo(string type)
+    {
+        loginRequest = type switch
+        {
+            "admin" => new LoginRequest { Email = "admin@hospital.com", Password = "admin123" },
+            "medico" => new LoginRequest { Email = "juan.perez@hospital.com", Password = "medico123" },
+            "enfermero" => new LoginRequest { Email = "maria.lopez@hospital.com", Password = "enfermero123" },
+            _ => new LoginRequest()
+        };
+        StateHasChanged();
+    }
+}

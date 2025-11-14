@@ -28,13 +28,7 @@ namespace HospitalQueueSystem.API.Controllers
         public async Task<ActionResult<Paciente>> GetPaciente(int id)
         {
             var paciente = await _context.Pacientes.FindAsync(id);
-
-            if (paciente == null)
-            {
-                return NotFound();
-            }
-
-            return paciente;
+            return paciente == null ? NotFound() : paciente;
         }
 
         [HttpPost]
@@ -50,28 +44,10 @@ namespace HospitalQueueSystem.API.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> PutPaciente(int id, Paciente paciente)
         {
-            if (id != paciente.Id)
-            {
-                return BadRequest();
-            }
+            if (id != paciente.Id) return BadRequest();
 
             _context.Entry(paciente).State = EntityState.Modified;
-
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!PacienteExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
+            await _context.SaveChangesAsync();
 
             return NoContent();
         }
@@ -80,20 +56,12 @@ namespace HospitalQueueSystem.API.Controllers
         public async Task<IActionResult> DeletePaciente(int id)
         {
             var paciente = await _context.Pacientes.FindAsync(id);
-            if (paciente == null)
-            {
-                return NotFound();
-            }
+            if (paciente == null) return NotFound();
 
             _context.Pacientes.Remove(paciente);
             await _context.SaveChangesAsync();
 
             return NoContent();
-        }
-
-        private bool PacienteExists(int id)
-        {
-            return _context.Pacientes.Any(e => e.Id == id);
         }
     }
 }

@@ -1,0 +1,467 @@
+﻿/* Estilos para el sistema de colas */
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 1rem;
+}
+
+.login-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    width: 100%;
+    max-width: 400px;
+}
+
+.demo-accounts {
+    border-top: 1px solid #eee;
+    padding-top: 1rem;
+    margin-top: 1rem;
+}
+
+.demo-account {
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    background: #f8f9fa;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid #dee2e6;
+}
+
+    .demo-account:hover {
+        background: #e9ecef;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+/* Dashboard */
+.dashboard-container {
+    padding: 1rem;
+    background: #f8f9fa;
+    min-height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.turno-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border-radius: 8px;
+    border-left: 5px solid #007bff;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+    .turno-item:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    }
+
+    .turno-item.llamado {
+        background: #fff3cd;
+        border-left-color: #ffc107;
+        animation: pulse 2s infinite;
+    }
+
+    .turno-item.en-atencion {
+        background: #d4edda;
+        border-left-color: #28a745;
+    }
+
+.turno-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.turno-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.no-turnos {
+    text-align: center;
+    padding: 2rem;
+    color: #6c757d;
+    font-style: italic;
+}
+
+/* Display público */
+.display-container {
+    background: #1a1a1a;
+    color: white;
+    min-height: 100vh;
+    padding: 2rem;
+    font-family: 'Arial', sans-serif;
+}
+
+.display-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.current-time {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: #f39c12;
+    font-weight: bold;
+}
+
+.turnos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.turno-display-card {
+    background: linear-gradient(135deg, #34495e, #2c3e50);
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    border: 4px solid transparent;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+    .turno-display-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+    }
+
+    .turno-display-card.llamado {
+        border-color: #f39c12;
+        background: linear-gradient(135deg, #e67e22, #d35400);
+        animation: pulse 1.5s infinite;
+    }
+
+    .turno-display-card.en-atencion {
+        border-color: #27ae60;
+        background: linear-gradient(135deg, #2ecc71, #27ae60);
+    }
+
+.turno-number {
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 1rem 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.clinica-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.paciente-name {
+    font-size: 1.3rem;
+    margin: 1rem 0;
+    color: #ecf0f1;
+}
+
+.turno-status {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    background: rgba(255,255,255,0.1);
+}
+
+.no-turnos-message {
+    text-align: center;
+    padding: 4rem;
+    color: #bdc3c7;
+}
+
+    .no-turnos-message h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .no-turnos-message p {
+        font-size: 1.5rem;
+    }
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .turnos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .turno-number {
+        font-size: 3rem;
+    }
+}
+
+
+/* Estilos para el layout principal */
+.page {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+.sidebar {
+    background-image: linear-gradient(180deg, rgb(44, 62, 80) 0%, #2c3e50 70%);
+}
+
+.top-row {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #d6d5d5;
+    justify-content: flex-end;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+}
+
+    .top-row.auth {
+        justify-content: space-between;
+    }
+
+    .top-row a, .top-row .btn-link {
+        white-space: nowrap;
+        margin-left: 1.5rem;
+    }
+
+        .top-row a:first-child {
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+@media (max-width: 767.98px) {
+    .top-row:not(.auth) {
+        display: none;
+    }
+
+    .top-row.auth {
+        justify-content: space-between;
+    }
+
+    .top-row a, .top-row .btn-link {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .page {
+        flex-direction: row;
+    }
+
+    .sidebar {
+        width: 250px;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+
+    .top-row {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .top-row, article {
+        padding-left: 2rem !important;
+        padding-right: 1.5rem !important;
+    }
+}
+
+/* Iconos para el menú */
+.oi {
+    width: 2rem;
+    font-size: 1.1rem;
+    vertical-align: text-top;
+    top: -2px;
+}
+
+.nav-item {
+    font-size: 0.9rem;
+    padding-bottom: 0.5rem;
+}
+
+    .nav-item:first-of-type {
+        padding-top: 1rem;
+    }
+
+    .nav-item:last-of-type {
+        padding-bottom: 1rem;
+    }
+
+    .nav-item a {
+        color: #d7d7d7;
+        border-radius: 4px;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        line-height: 3rem;
+    }
+
+        .nav-item a.active {
+            background-color: rgba(255,255,255,0.25);
+            color: white;
+        }
+
+        .nav-item a:hover {
+            background-color: rgba(255,255,255,0.1);
+            color: white;
+        }
+
+/* Dashboard Styles */
+.dashboard-container {
+    padding: 1rem;
+    background: #f8f9fa;
+    min-height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.turno-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border-radius: 8px;
+    border-left: 5px solid #007bff;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+    .turno-item:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    }
+
+    .turno-item.llamado {
+        background: #fff3cd;
+        border-left-color: #ffc107;
+        animation: pulse 2s infinite;
+    }
+
+    .turno-item.en-atencion {
+        background: #d4edda;
+        border-left-color: #28a745;
+    }
+
+.turno-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.turno-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.no-turnos {
+    text-align: center;
+    padding: 2rem;
+    color: #6c757d;
+    font-style: italic;
+}
+
+.nuevo-paciente-form {
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+    .form-group label {
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+        display: block;
+    }
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

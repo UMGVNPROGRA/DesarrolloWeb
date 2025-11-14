@@ -1,4 +1,9 @@
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace HospitalQueueSystem.Models.Data
 {
@@ -15,12 +20,8 @@ namespace HospitalQueueSystem.Models.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            // Configuraciones adicionales si son necesarias
             modelBuilder.Entity<Turno>()
                 .HasIndex(t => new { t.ClinicaId, t.Estado });
-                
-            modelBuilder.Entity<Turno>()
-                .HasIndex(t => t.NumeroTurno);
         }
     }
 }

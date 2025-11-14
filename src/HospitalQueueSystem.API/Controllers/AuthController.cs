@@ -1,7 +1,8 @@
-using Microsoft.AspNetCore.Mvc;
+using HospitalQueueSystem.API.Services;
 using HospitalQueueSystem.Models;
 using HospitalQueueSystem.Models.Data;
-using HospitalQueueSystem.API.Services;
+using HospitalQueueSystem.Models;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace HospitalQueueSystem.API.Controllers
@@ -37,14 +38,40 @@ namespace HospitalQueueSystem.API.Controllers
                 Token = token,
                 Nombre = usuario.Nombre,
                 Rol = usuario.Rol,
+                Email = usuario.Email,
+                Expira = DateTime.Now.AddMinutes(60)
+            };
+        }
+
+        [HttpPost("register")]
+        public async Task<ActionResult<LoginResponse>> Register(Usuario usuario)
+        {
+            // Verificar si el email ya existe
+            if (await _context.Usuarios.AnyAsync(u => u.Email == usuario.Email))
+            {
+                return BadRequest("El email ya está registrado");
+            }
+
+            usuario.FechaCreacion = DateTime.UtcNow;
+            _context.Usuarios.Add(usuario);
+            await _context.SaveChangesAsync();
+
+            var token = _jwtService.GenerateToken(usuario);
+
+            return new LoginResponse
+            {
+                Token = token,
+                Nombre = usuario.Nombre,
+                Rol = usuario.Rol,
+                Email = usuario.Email,
                 Expira = DateTime.Now.AddMinutes(60)
             };
         }
 
         private bool VerifyPassword(string password, string passwordHash)
         {
-            // En un proyecto real, usa BCrypt o similar
-            return password == passwordHash; // Solo para desarrollo
+            // En producción, usar BCrypt.Net
+            return password == passwordHash;
         }
     }
 }

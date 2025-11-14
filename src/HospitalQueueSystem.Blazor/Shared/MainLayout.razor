@@ -1,0 +1,74 @@
+﻿@inherits LayoutComponentBase
+@inject IJSRuntime JSRuntime
+@inject NavigationManager Navigation
+
+<div class="page">
+    @if (isAuthenticated)
+    {
+        <div class="sidebar">
+            <NavMenu />
+        </div>
+    }
+
+    <main>
+        @if (isAuthenticated)
+        {
+            <div class="top-row px-4 auth">
+                <span class="me-3">Bienvenido, <strong>@userName</strong></span>
+                <a href="display" target="_blank" class="btn btn-warning btn-sm me-2">🖥️ Display</a>
+                <button class="btn btn-outline-secondary btn-sm" @onclick="Logout">Cerrar Sesión</button>
+            </div>
+        }
+
+        <article class="content px-4">
+            @Body
+        </article>
+    </main>
+</div>
+
+@code {
+    private bool isAuthenticated = false;
+    private string userName = string.Empty;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await CheckAuthentication();
+    }
+
+    private async Task CheckAuthentication()
+    {
+        try
+        {
+            var token = await JSRuntime.InvokeAsync<string>("localStorage.getItem", "authToken");
+            isAuthenticated = !string.IsNullOrEmpty(token);
+
+            if (isAuthenticated)
+            {
+                userName = await JSRuntime.InvokeAsync<string>("localStorage.getItem", "userName") ?? "Usuario";
+            }
+        }
+        catch
+        {
+            isAuthenticated = false;
+        }
+
+        StateHasChanged();
+    }
+
+    private async Task Logout()
+    {
+        try
+        {
+            await JSRuntime.InvokeVoidAsync("localStorage.removeItem", "authToken");
+            await JSRuntime.InvokeVoidAsync("localStorage.removeItem", "userName");
+            await JSRuntime.InvokeVoidAsync("localStorage.removeItem", "userRole");
+
+            isAuthenticated = false;
+            Navigation.NavigateTo("/login", forceLoad: true);
+        }
+        catch
+        {
+            Navigation.NavigateTo("/login", forceLoad: true);
+        }
+    }
+}

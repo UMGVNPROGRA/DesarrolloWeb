@@ -1,7 +1,112 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\mike_\\OneDrive\\Documents\\desarrollo web\\ProyectoFinal\\HospitalQueueSystem\\src\\",
-  "Documents": [],
+  "WorkspaceRootPath": "D:\\Documentos\\Repositorios\\DesarrolloWeb9.0\\HospitalQueueSystem\\src\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5F0A3AD4-A31E-4F4D-A071-8F96025037FC}|HospitalQueueSystem.Blazor\\HospitalQueueSystem.Blazor.csproj|d:\\documentos\\repositorios\\desarrolloweb9.0\\hospitalqueuesystem\\src\\hospitalqueuesystem.blazor\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5F0A3AD4-A31E-4F4D-A071-8F96025037FC}|HospitalQueueSystem.Blazor\\HospitalQueueSystem.Blazor.csproj|solutionrelative:hospitalqueuesystem.blazor\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F0A3AD4-A31E-4F4D-A071-8F96025037FC}|HospitalQueueSystem.Blazor\\HospitalQueueSystem.Blazor.csproj|d:\\documentos\\repositorios\\desarrolloweb9.0\\hospitalqueuesystem\\src\\hospitalqueuesystem.blazor\\shared\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5F0A3AD4-A31E-4F4D-A071-8F96025037FC}|HospitalQueueSystem.Blazor\\HospitalQueueSystem.Blazor.csproj|solutionrelative:hospitalqueuesystem.blazor\\shared\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F0A3AD4-A31E-4F4D-A071-8F96025037FC}|HospitalQueueSystem.Blazor\\HospitalQueueSystem.Blazor.csproj|d:\\documentos\\repositorios\\desarrolloweb9.0\\hospitalqueuesystem\\src\\hospitalqueuesystem.blazor\\shared\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5F0A3AD4-A31E-4F4D-A071-8F96025037FC}|HospitalQueueSystem.Blazor\\HospitalQueueSystem.Blazor.csproj|solutionrelative:hospitalqueuesystem.blazor\\shared\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F0A3AD4-A31E-4F4D-A071-8F96025037FC}|HospitalQueueSystem.Blazor\\HospitalQueueSystem.Blazor.csproj|d:\\documentos\\repositorios\\desarrolloweb9.0\\hospitalqueuesystem\\src\\hospitalqueuesystem.blazor\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5F0A3AD4-A31E-4F4D-A071-8F96025037FC}|HospitalQueueSystem.Blazor\\HospitalQueueSystem.Blazor.csproj|solutionrelative:hospitalqueuesystem.blazor\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F0A3AD4-A31E-4F4D-A071-8F96025037FC}|HospitalQueueSystem.Blazor\\HospitalQueueSystem.Blazor.csproj|d:\\documentos\\repositorios\\desarrolloweb9.0\\hospitalqueuesystem\\src\\hospitalqueuesystem.blazor\\services\\turnosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F0A3AD4-A31E-4F4D-A071-8F96025037FC}|HospitalQueueSystem.Blazor\\HospitalQueueSystem.Blazor.csproj|solutionrelative:hospitalqueuesystem.blazor\\services\\turnosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F0A3AD4-A31E-4F4D-A071-8F96025037FC}|HospitalQueueSystem.Blazor\\HospitalQueueSystem.Blazor.csproj|d:\\documentos\\repositorios\\desarrolloweb9.0\\hospitalqueuesystem\\src\\hospitalqueuesystem.blazor\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F0A3AD4-A31E-4F4D-A071-8F96025037FC}|HospitalQueueSystem.Blazor\\HospitalQueueSystem.Blazor.csproj|solutionrelative:hospitalqueuesystem.blazor\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F0A3AD4-A31E-4F4D-A071-8F96025037FC}|HospitalQueueSystem.Blazor\\HospitalQueueSystem.Blazor.csproj|d:\\documentos\\repositorios\\desarrolloweb9.0\\hospitalqueuesystem\\src\\hospitalqueuesystem.blazor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F0A3AD4-A31E-4F4D-A071-8F96025037FC}|HospitalQueueSystem.Blazor\\HospitalQueueSystem.Blazor.csproj|solutionrelative:hospitalqueuesystem.blazor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F0A3AD4-A31E-4F4D-A071-8F96025037FC}|HospitalQueueSystem.Blazor\\HospitalQueueSystem.Blazor.csproj|d:\\documentos\\repositorios\\desarrolloweb9.0\\hospitalqueuesystem\\src\\hospitalqueuesystem.blazor\\pages\\dashboard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5F0A3AD4-A31E-4F4D-A071-8F96025037FC}|HospitalQueueSystem.Blazor\\HospitalQueueSystem.Blazor.csproj|solutionrelative:hospitalqueuesystem.blazor\\pages\\dashboard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2BEA5D3-B969-4F23-AA96-509DC5873422}|HospitalQueueSystem.Models\\HospitalQueueSystem.Models.csproj|d:\\documentos\\repositorios\\desarrolloweb9.0\\hospitalqueuesystem\\src\\hospitalqueuesystem.models\\models\\clinica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2BEA5D3-B969-4F23-AA96-509DC5873422}|HospitalQueueSystem.Models\\HospitalQueueSystem.Models.csproj|solutionrelative:hospitalqueuesystem.models\\models\\clinica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F0A3AD4-A31E-4F4D-A071-8F96025037FC}|HospitalQueueSystem.Blazor\\HospitalQueueSystem.Blazor.csproj|d:\\documentos\\repositorios\\desarrolloweb9.0\\hospitalqueuesystem\\src\\hospitalqueuesystem.blazor\\pages\\display.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5F0A3AD4-A31E-4F4D-A071-8F96025037FC}|HospitalQueueSystem.Blazor\\HospitalQueueSystem.Blazor.csproj|solutionrelative:hospitalqueuesystem.blazor\\pages\\display.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DA55D1F-7551-44BF-9DBE-409FB9408E76}|HospitalQueueSystem.API\\HospitalQueueSystem.API.csproj|d:\\documentos\\repositorios\\desarrolloweb9.0\\hospitalqueuesystem\\src\\hospitalqueuesystem.api\\services\\public class loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DA55D1F-7551-44BF-9DBE-409FB9408E76}|HospitalQueueSystem.API\\HospitalQueueSystem.API.csproj|solutionrelative:hospitalqueuesystem.api\\services\\public class loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DA55D1F-7551-44BF-9DBE-409FB9408E76}|HospitalQueueSystem.API\\HospitalQueueSystem.API.csproj|d:\\documentos\\repositorios\\desarrolloweb9.0\\hospitalqueuesystem\\src\\hospitalqueuesystem.api\\controllers\\turnoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DA55D1F-7551-44BF-9DBE-409FB9408E76}|HospitalQueueSystem.API\\HospitalQueueSystem.API.csproj|solutionrelative:hospitalqueuesystem.api\\controllers\\turnoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DA55D1F-7551-44BF-9DBE-409FB9408E76}|HospitalQueueSystem.API\\HospitalQueueSystem.API.csproj|d:\\documentos\\repositorios\\desarrolloweb9.0\\hospitalqueuesystem\\src\\hospitalqueuesystem.api\\controllers\\pacientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DA55D1F-7551-44BF-9DBE-409FB9408E76}|HospitalQueueSystem.API\\HospitalQueueSystem.API.csproj|solutionrelative:hospitalqueuesystem.api\\controllers\\pacientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DA55D1F-7551-44BF-9DBE-409FB9408E76}|HospitalQueueSystem.API\\HospitalQueueSystem.API.csproj|d:\\documentos\\repositorios\\desarrolloweb9.0\\hospitalqueuesystem\\src\\hospitalqueuesystem.api\\controllers\\clinicascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DA55D1F-7551-44BF-9DBE-409FB9408E76}|HospitalQueueSystem.API\\HospitalQueueSystem.API.csproj|solutionrelative:hospitalqueuesystem.api\\controllers\\clinicascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DA55D1F-7551-44BF-9DBE-409FB9408E76}|HospitalQueueSystem.API\\HospitalQueueSystem.API.csproj|d:\\documentos\\repositorios\\desarrolloweb9.0\\hospitalqueuesystem\\src\\hospitalqueuesystem.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DA55D1F-7551-44BF-9DBE-409FB9408E76}|HospitalQueueSystem.API\\HospitalQueueSystem.API.csproj|solutionrelative:hospitalqueuesystem.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2BEA5D3-B969-4F23-AA96-509DC5873422}|HospitalQueueSystem.Models\\HospitalQueueSystem.Models.csproj|d:\\documentos\\repositorios\\desarrolloweb9.0\\hospitalqueuesystem\\src\\hospitalqueuesystem.models\\models\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2BEA5D3-B969-4F23-AA96-509DC5873422}|HospitalQueueSystem.Models\\HospitalQueueSystem.Models.csproj|solutionrelative:hospitalqueuesystem.models\\models\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2BEA5D3-B969-4F23-AA96-509DC5873422}|HospitalQueueSystem.Models\\HospitalQueueSystem.Models.csproj|d:\\documentos\\repositorios\\desarrolloweb9.0\\hospitalqueuesystem\\src\\hospitalqueuesystem.models\\hospitalqueuesystem.models.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E2BEA5D3-B969-4F23-AA96-509DC5873422}|HospitalQueueSystem.Models\\HospitalQueueSystem.Models.csproj|solutionrelative:hospitalqueuesystem.models\\hospitalqueuesystem.models.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2BEA5D3-B969-4F23-AA96-509DC5873422}|HospitalQueueSystem.Models\\HospitalQueueSystem.Models.csproj|d:\\documentos\\repositorios\\desarrolloweb9.0\\hospitalqueuesystem\\src\\hospitalqueuesystem.models\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2BEA5D3-B969-4F23-AA96-509DC5873422}|HospitalQueueSystem.Models\\HospitalQueueSystem.Models.csproj|solutionrelative:hospitalqueuesystem.models\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2BEA5D3-B969-4F23-AA96-509DC5873422}|HospitalQueueSystem.Models\\HospitalQueueSystem.Models.csproj|d:\\documentos\\repositorios\\desarrolloweb9.0\\hospitalqueuesystem\\src\\hospitalqueuesystem.models\\models\\turno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2BEA5D3-B969-4F23-AA96-509DC5873422}|HospitalQueueSystem.Models\\HospitalQueueSystem.Models.csproj|solutionrelative:hospitalqueuesystem.models\\models\\turno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2BEA5D3-B969-4F23-AA96-509DC5873422}|HospitalQueueSystem.Models\\HospitalQueueSystem.Models.csproj|d:\\documentos\\repositorios\\desarrolloweb9.0\\hospitalqueuesystem\\src\\hospitalqueuesystem.models\\models\\paciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2BEA5D3-B969-4F23-AA96-509DC5873422}|HospitalQueueSystem.Models\\HospitalQueueSystem.Models.csproj|solutionrelative:hospitalqueuesystem.models\\models\\paciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2BEA5D3-B969-4F23-AA96-509DC5873422}|HospitalQueueSystem.Models\\HospitalQueueSystem.Models.csproj|d:\\documentos\\repositorios\\desarrolloweb9.0\\hospitalqueuesystem\\src\\hospitalqueuesystem.models\\models\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2BEA5D3-B969-4F23-AA96-509DC5873422}|HospitalQueueSystem.Models\\HospitalQueueSystem.Models.csproj|solutionrelative:hospitalqueuesystem.models\\models\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F0A3AD4-A31E-4F4D-A071-8F96025037FC}|HospitalQueueSystem.Blazor\\HospitalQueueSystem.Blazor.csproj|d:\\documentos\\repositorios\\desarrolloweb9.0\\hospitalqueuesystem\\src\\hospitalqueuesystem.blazor\\wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{5F0A3AD4-A31E-4F4D-A071-8F96025037FC}|HospitalQueueSystem.Blazor\\HospitalQueueSystem.Blazor.csproj|solutionrelative:hospitalqueuesystem.blazor\\wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DA55D1F-7551-44BF-9DBE-409FB9408E76}|HospitalQueueSystem.API\\HospitalQueueSystem.API.csproj|d:\\documentos\\repositorios\\desarrolloweb9.0\\hospitalqueuesystem\\src\\hospitalqueuesystem.api\\hospitalqueuesystem.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{8DA55D1F-7551-44BF-9DBE-409FB9408E76}|HospitalQueueSystem.API\\HospitalQueueSystem.API.csproj|solutionrelative:hospitalqueuesystem.api\\hospitalqueuesystem.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DA55D1F-7551-44BF-9DBE-409FB9408E76}|HospitalQueueSystem.API\\HospitalQueueSystem.API.csproj|d:\\documentos\\repositorios\\desarrolloweb9.0\\hospitalqueuesystem\\src\\hospitalqueuesystem.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8DA55D1F-7551-44BF-9DBE-409FB9408E76}|HospitalQueueSystem.API\\HospitalQueueSystem.API.csproj|solutionrelative:hospitalqueuesystem.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DA55D1F-7551-44BF-9DBE-409FB9408E76}|HospitalQueueSystem.API\\HospitalQueueSystem.API.csproj|d:\\documentos\\repositorios\\desarrolloweb9.0\\hospitalqueuesystem\\src\\hospitalqueuesystem.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8DA55D1F-7551-44BF-9DBE-409FB9408E76}|HospitalQueueSystem.API\\HospitalQueueSystem.API.csproj|solutionrelative:hospitalqueuesystem.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DA55D1F-7551-44BF-9DBE-409FB9408E76}|HospitalQueueSystem.API\\HospitalQueueSystem.API.csproj|d:\\documentos\\repositorios\\desarrolloweb9.0\\hospitalqueuesystem\\src\\hospitalqueuesystem.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DA55D1F-7551-44BF-9DBE-409FB9408E76}|HospitalQueueSystem.API\\HospitalQueueSystem.API.csproj|solutionrelative:hospitalqueuesystem.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +114,342 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.razor",
+              "DocumentMoniker": "D:\\Documentos\\Repositorios\\DesarrolloWeb9.0\\HospitalQueueSystem\\src\\HospitalQueueSystem.Blazor\\Pages\\Index.razor",
+              "RelativeDocumentMoniker": "HospitalQueueSystem.Blazor\\Pages\\Index.razor",
+              "ToolTip": "D:\\Documentos\\Repositorios\\DesarrolloWeb9.0\\HospitalQueueSystem\\src\\HospitalQueueSystem.Blazor\\Pages\\Index.razor",
+              "RelativeToolTip": "HospitalQueueSystem.Blazor\\Pages\\Index.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-14T08:19:10.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "D:\\Documentos\\Repositorios\\DesarrolloWeb9.0\\HospitalQueueSystem\\src\\HospitalQueueSystem.Blazor\\Shared\\MainLayout.razor",
+              "RelativeDocumentMoniker": "HospitalQueueSystem.Blazor\\Shared\\MainLayout.razor",
+              "ToolTip": "D:\\Documentos\\Repositorios\\DesarrolloWeb9.0\\HospitalQueueSystem\\src\\HospitalQueueSystem.Blazor\\Shared\\MainLayout.razor",
+              "RelativeToolTip": "HospitalQueueSystem.Blazor\\Shared\\MainLayout.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-14T08:18:41.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "D:\\Documentos\\Repositorios\\DesarrolloWeb9.0\\HospitalQueueSystem\\src\\HospitalQueueSystem.Blazor\\Shared\\NavMenu.razor",
+              "RelativeDocumentMoniker": "HospitalQueueSystem.Blazor\\Shared\\NavMenu.razor",
+              "ToolTip": "D:\\Documentos\\Repositorios\\DesarrolloWeb9.0\\HospitalQueueSystem\\src\\HospitalQueueSystem.Blazor\\Shared\\NavMenu.razor",
+              "RelativeToolTip": "HospitalQueueSystem.Blazor\\Shared\\NavMenu.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-14T08:18:31.328Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "D:\\Documentos\\Repositorios\\DesarrolloWeb9.0\\HospitalQueueSystem\\src\\HospitalQueueSystem.Models\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "HospitalQueueSystem.Models\\Models\\Usuario.cs",
+              "ToolTip": "D:\\Documentos\\Repositorios\\DesarrolloWeb9.0\\HospitalQueueSystem\\src\\HospitalQueueSystem.Models\\Models\\Usuario.cs",
+              "RelativeToolTip": "HospitalQueueSystem.Models\\Models\\Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T08:02:08.024Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Turno.cs",
+              "DocumentMoniker": "D:\\Documentos\\Repositorios\\DesarrolloWeb9.0\\HospitalQueueSystem\\src\\HospitalQueueSystem.Models\\Models\\Turno.cs",
+              "RelativeDocumentMoniker": "HospitalQueueSystem.Models\\Models\\Turno.cs",
+              "ToolTip": "D:\\Documentos\\Repositorios\\DesarrolloWeb9.0\\HospitalQueueSystem\\src\\HospitalQueueSystem.Models\\Models\\Turno.cs",
+              "RelativeToolTip": "HospitalQueueSystem.Models\\Models\\Turno.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T08:02:06.922Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Paciente.cs",
+              "DocumentMoniker": "D:\\Documentos\\Repositorios\\DesarrolloWeb9.0\\HospitalQueueSystem\\src\\HospitalQueueSystem.Models\\Models\\Paciente.cs",
+              "RelativeDocumentMoniker": "HospitalQueueSystem.Models\\Models\\Paciente.cs",
+              "ToolTip": "D:\\Documentos\\Repositorios\\DesarrolloWeb9.0\\HospitalQueueSystem\\src\\HospitalQueueSystem.Models\\Models\\Paciente.cs",
+              "RelativeToolTip": "HospitalQueueSystem.Models\\Models\\Paciente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T08:01:52.937Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "HospitalQueueSystem.Models",
+              "DocumentMoniker": "D:\\Documentos\\Repositorios\\DesarrolloWeb9.0\\HospitalQueueSystem\\src\\HospitalQueueSystem.Models\\HospitalQueueSystem.Models.csproj",
+              "RelativeDocumentMoniker": "HospitalQueueSystem.Models\\HospitalQueueSystem.Models.csproj",
+              "ToolTip": "D:\\Documentos\\Repositorios\\DesarrolloWeb9.0\\HospitalQueueSystem\\src\\HospitalQueueSystem.Models\\HospitalQueueSystem.Models.csproj",
+              "RelativeToolTip": "HospitalQueueSystem.Models\\HospitalQueueSystem.Models.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-14T07:40:18.84Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Clinica.cs",
+              "DocumentMoniker": "D:\\Documentos\\Repositorios\\DesarrolloWeb9.0\\HospitalQueueSystem\\src\\HospitalQueueSystem.Models\\Models\\Clinica.cs",
+              "RelativeDocumentMoniker": "HospitalQueueSystem.Models\\Models\\Clinica.cs",
+              "ToolTip": "D:\\Documentos\\Repositorios\\DesarrolloWeb9.0\\HospitalQueueSystem\\src\\HospitalQueueSystem.Models\\Models\\Clinica.cs",
+              "RelativeToolTip": "HospitalQueueSystem.Models\\Models\\Clinica.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T07:38:36.874Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "app.css",
+              "DocumentMoniker": "D:\\Documentos\\Repositorios\\DesarrolloWeb9.0\\HospitalQueueSystem\\src\\HospitalQueueSystem.Blazor\\wwwroot\\css\\app.css",
+              "RelativeDocumentMoniker": "HospitalQueueSystem.Blazor\\wwwroot\\css\\app.css",
+              "ToolTip": "D:\\Documentos\\Repositorios\\DesarrolloWeb9.0\\HospitalQueueSystem\\src\\HospitalQueueSystem.Blazor\\wwwroot\\css\\app.css",
+              "RelativeToolTip": "HospitalQueueSystem.Blazor\\wwwroot\\css\\app.css",
+              "ViewState": "AgIAANAAAAAAAAAAAAAcwPcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-11-14T07:35:37.467Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Display.razor",
+              "DocumentMoniker": "D:\\Documentos\\Repositorios\\DesarrolloWeb9.0\\HospitalQueueSystem\\src\\HospitalQueueSystem.Blazor\\Pages\\Display.razor",
+              "RelativeDocumentMoniker": "HospitalQueueSystem.Blazor\\Pages\\Display.razor",
+              "ToolTip": "D:\\Documentos\\Repositorios\\DesarrolloWeb9.0\\HospitalQueueSystem\\src\\HospitalQueueSystem.Blazor\\Pages\\Display.razor",
+              "RelativeToolTip": "HospitalQueueSystem.Blazor\\Pages\\Display.razor",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAYwF0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-14T07:34:57.565Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Dashboard.razor",
+              "DocumentMoniker": "D:\\Documentos\\Repositorios\\DesarrolloWeb9.0\\HospitalQueueSystem\\src\\HospitalQueueSystem.Blazor\\Pages\\Dashboard.razor",
+              "RelativeDocumentMoniker": "HospitalQueueSystem.Blazor\\Pages\\Dashboard.razor",
+              "ToolTip": "D:\\Documentos\\Repositorios\\DesarrolloWeb9.0\\HospitalQueueSystem\\src\\HospitalQueueSystem.Blazor\\Pages\\Dashboard.razor",
+              "RelativeToolTip": "HospitalQueueSystem.Blazor\\Pages\\Dashboard.razor",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAAAIsAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-14T07:34:31.314Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "HospitalQueueSystem.API",
+              "DocumentMoniker": "D:\\Documentos\\Repositorios\\DesarrolloWeb9.0\\HospitalQueueSystem\\src\\HospitalQueueSystem.API\\HospitalQueueSystem.API.csproj",
+              "RelativeDocumentMoniker": "HospitalQueueSystem.API\\HospitalQueueSystem.API.csproj",
+              "ToolTip": "D:\\Documentos\\Repositorios\\DesarrolloWeb9.0\\HospitalQueueSystem\\src\\HospitalQueueSystem.API\\HospitalQueueSystem.API.csproj",
+              "RelativeToolTip": "HospitalQueueSystem.API\\HospitalQueueSystem.API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-14T07:33:40.796Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Login.razor",
+              "DocumentMoniker": "D:\\Documentos\\Repositorios\\DesarrolloWeb9.0\\HospitalQueueSystem\\src\\HospitalQueueSystem.Blazor\\Pages\\Login.razor",
+              "RelativeDocumentMoniker": "HospitalQueueSystem.Blazor\\Pages\\Login.razor",
+              "ToolTip": "D:\\Documentos\\Repositorios\\DesarrolloWeb9.0\\HospitalQueueSystem\\src\\HospitalQueueSystem.Blazor\\Pages\\Login.razor*",
+              "RelativeToolTip": "HospitalQueueSystem.Blazor\\Pages\\Login.razor*",
+              "ViewState": "AgIAADoAAAAAAAAAAAAYwGoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-14T07:30:10.311Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TurnosService.cs",
+              "DocumentMoniker": "D:\\Documentos\\Repositorios\\DesarrolloWeb9.0\\HospitalQueueSystem\\src\\HospitalQueueSystem.Blazor\\Services\\TurnosService.cs",
+              "RelativeDocumentMoniker": "HospitalQueueSystem.Blazor\\Services\\TurnosService.cs",
+              "ToolTip": "D:\\Documentos\\Repositorios\\DesarrolloWeb9.0\\HospitalQueueSystem\\src\\HospitalQueueSystem.Blazor\\Services\\TurnosService.cs",
+              "RelativeToolTip": "HospitalQueueSystem.Blazor\\Services\\TurnosService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T07:28:59.998Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "D:\\Documentos\\Repositorios\\DesarrolloWeb9.0\\HospitalQueueSystem\\src\\HospitalQueueSystem.Blazor\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "HospitalQueueSystem.Blazor\\Services\\AuthService.cs",
+              "ToolTip": "D:\\Documentos\\Repositorios\\DesarrolloWeb9.0\\HospitalQueueSystem\\src\\HospitalQueueSystem.Blazor\\Services\\AuthService.cs",
+              "RelativeToolTip": "HospitalQueueSystem.Blazor\\Services\\AuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T07:28:42.993Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Documentos\\Repositorios\\DesarrolloWeb9.0\\HospitalQueueSystem\\src\\HospitalQueueSystem.Blazor\\Program.cs",
+              "RelativeDocumentMoniker": "HospitalQueueSystem.Blazor\\Program.cs",
+              "ToolTip": "D:\\Documentos\\Repositorios\\DesarrolloWeb9.0\\HospitalQueueSystem\\src\\HospitalQueueSystem.Blazor\\Program.cs",
+              "RelativeToolTip": "HospitalQueueSystem.Blazor\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T07:22:26.879Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Documentos\\Repositorios\\DesarrolloWeb9.0\\HospitalQueueSystem\\src\\HospitalQueueSystem.API\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "HospitalQueueSystem.API\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\Documentos\\Repositorios\\DesarrolloWeb9.0\\HospitalQueueSystem\\src\\HospitalQueueSystem.API\\Properties\\launchSettings.json",
+              "RelativeToolTip": "HospitalQueueSystem.API\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-14T07:11:07.671Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Documentos\\Repositorios\\DesarrolloWeb9.0\\HospitalQueueSystem\\src\\HospitalQueueSystem.API\\appsettings.json",
+              "RelativeDocumentMoniker": "HospitalQueueSystem.API\\appsettings.json",
+              "ToolTip": "D:\\Documentos\\Repositorios\\DesarrolloWeb9.0\\HospitalQueueSystem\\src\\HospitalQueueSystem.API\\appsettings.json",
+              "RelativeToolTip": "HospitalQueueSystem.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-14T07:07:03.012Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Documentos\\Repositorios\\DesarrolloWeb9.0\\HospitalQueueSystem\\src\\HospitalQueueSystem.API\\Program.cs",
+              "RelativeDocumentMoniker": "HospitalQueueSystem.API\\Program.cs",
+              "ToolTip": "D:\\Documentos\\Repositorios\\DesarrolloWeb9.0\\HospitalQueueSystem\\src\\HospitalQueueSystem.API\\Program.cs",
+              "RelativeToolTip": "HospitalQueueSystem.API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T06:58:42.37Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "TurnosController.cs",
+              "DocumentMoniker": "D:\\Documentos\\Repositorios\\DesarrolloWeb9.0\\HospitalQueueSystem\\src\\HospitalQueueSystem.API\\Controllers\\TurnosController.cs",
+              "RelativeDocumentMoniker": "HospitalQueueSystem.API\\Controllers\\TurnosController.cs",
+              "ToolTip": "D:\\Documentos\\Repositorios\\DesarrolloWeb9.0\\HospitalQueueSystem\\src\\HospitalQueueSystem.API\\Controllers\\TurnosController.cs",
+              "RelativeToolTip": "HospitalQueueSystem.API\\Controllers\\TurnosController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T06:58:27.864Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ClinicasController.cs",
+              "DocumentMoniker": "D:\\Documentos\\Repositorios\\DesarrolloWeb9.0\\HospitalQueueSystem\\src\\HospitalQueueSystem.API\\Controllers\\ClinicasController.cs",
+              "RelativeDocumentMoniker": "HospitalQueueSystem.API\\Controllers\\ClinicasController.cs",
+              "ToolTip": "D:\\Documentos\\Repositorios\\DesarrolloWeb9.0\\HospitalQueueSystem\\src\\HospitalQueueSystem.API\\Controllers\\ClinicasController.cs",
+              "RelativeToolTip": "HospitalQueueSystem.API\\Controllers\\ClinicasController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T06:58:10.945Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PacientesController.cs",
+              "DocumentMoniker": "D:\\Documentos\\Repositorios\\DesarrolloWeb9.0\\HospitalQueueSystem\\src\\HospitalQueueSystem.API\\Controllers\\PacientesController.cs",
+              "RelativeDocumentMoniker": "HospitalQueueSystem.API\\Controllers\\PacientesController.cs",
+              "ToolTip": "D:\\Documentos\\Repositorios\\DesarrolloWeb9.0\\HospitalQueueSystem\\src\\HospitalQueueSystem.API\\Controllers\\PacientesController.cs",
+              "RelativeToolTip": "HospitalQueueSystem.API\\Controllers\\PacientesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T06:57:48.748Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\Documentos\\Repositorios\\DesarrolloWeb9.0\\HospitalQueueSystem\\src\\HospitalQueueSystem.API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "HospitalQueueSystem.API\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\Documentos\\Repositorios\\DesarrolloWeb9.0\\HospitalQueueSystem\\src\\HospitalQueueSystem.API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "HospitalQueueSystem.API\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T06:57:22.881Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "public class LoginResponse.cs",
+              "DocumentMoniker": "D:\\Documentos\\Repositorios\\DesarrolloWeb9.0\\HospitalQueueSystem\\src\\HospitalQueueSystem.API\\Services\\public class LoginResponse.cs",
+              "RelativeDocumentMoniker": "HospitalQueueSystem.API\\Services\\public class LoginResponse.cs",
+              "ToolTip": "D:\\Documentos\\Repositorios\\DesarrolloWeb9.0\\HospitalQueueSystem\\src\\HospitalQueueSystem.API\\Services\\public class LoginResponse.cs",
+              "RelativeToolTip": "HospitalQueueSystem.API\\Services\\public class LoginResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T06:57:09.001Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "LoginResponse.cs",
+              "DocumentMoniker": "D:\\Documentos\\Repositorios\\DesarrolloWeb9.0\\HospitalQueueSystem\\src\\HospitalQueueSystem.Models\\Models\\LoginResponse.cs",
+              "RelativeDocumentMoniker": "HospitalQueueSystem.Models\\Models\\LoginResponse.cs",
+              "ToolTip": "D:\\Documentos\\Repositorios\\DesarrolloWeb9.0\\HospitalQueueSystem\\src\\HospitalQueueSystem.Models\\Models\\LoginResponse.cs",
+              "RelativeToolTip": "HospitalQueueSystem.Models\\Models\\LoginResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T06:56:13.608Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "LoginRequest.cs",
+              "DocumentMoniker": "D:\\Documentos\\Repositorios\\DesarrolloWeb9.0\\HospitalQueueSystem\\src\\HospitalQueueSystem.Models\\Models\\LoginRequest.cs",
+              "RelativeDocumentMoniker": "HospitalQueueSystem.Models\\Models\\LoginRequest.cs",
+              "ToolTip": "D:\\Documentos\\Repositorios\\DesarrolloWeb9.0\\HospitalQueueSystem\\src\\HospitalQueueSystem.Models\\Models\\LoginRequest.cs",
+              "RelativeToolTip": "HospitalQueueSystem.Models\\Models\\LoginRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T06:55:45.968Z",
+              "EditorCaption": ""
             }
           ]
         }
