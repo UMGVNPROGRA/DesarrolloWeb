@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "dgSpecHash": "InVx+pgxrhQ=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\mike_\\OneDrive\\Documents\\desarrollo web\\ProyectoFinal\\HospitalQueueSystem\\src\\HospitalQueueSystem.Blazor\\HospitalQueueSystem.Blazor.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mike_\\.nuget\\packages\\microsoft.aspnetcore.app.internal.assets\\10.0.0\\microsoft.aspnetcore.app.internal.assets.10.0.0.nupkg.sha512",
+    "C:\\Users\\mike_\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\10.0.0\\microsoft.aspnetcore.components.webassembly.10.0.0.nupkg.sha512",
+    "C:\\Users\\mike_\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.authentication\\10.0.0\\microsoft.aspnetcore.components.webassembly.authentication.10.0.0.nupkg.sha512",
+    "C:\\Users\\mike_\\.nuget\\packages\\microsoft.extensions.http\\10.0.0\\microsoft.extensions.http.10.0.0.nupkg.sha512",
+    "C:\\Users\\mike_\\.nuget\\packages\\microsoft.jsinterop.webassembly\\10.0.0\\microsoft.jsinterop.webassembly.10.0.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1510",
+      "level": "Warning",
+      "message": "PackageReference Microsoft.Extensions.Http no se eliminará. Considere la posibilidad de quitar este paquete de las dependencias, ya que es probable que no sea necesario.",
+      "projectPath": "C:\\Users\\mike_\\OneDrive\\Documents\\desarrollo web\\ProyectoFinal\\HospitalQueueSystem\\src\\HospitalQueueSystem.Blazor\\HospitalQueueSystem.Blazor.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\mike_\\OneDrive\\Documents\\desarrollo web\\ProyectoFinal\\HospitalQueueSystem\\src\\HospitalQueueSystem.Blazor\\HospitalQueueSystem.Blazor.csproj",
+      "libraryId": "Microsoft.Extensions.Http",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
+}

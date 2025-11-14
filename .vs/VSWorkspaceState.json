@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\HospitalQueueSystem.API",
+    "\\src\\HospitalQueueSystem.Blazor",
+    "\\src\\HospitalQueueSystem.Models",
+    "\\src\\HospitalQueueSystem.Models\\Models"
+  ],
+  "SelectedNode": "\\src\\HospitalQueueSystem.sln",
+  "PreviewInSolutionExplorer": false
+}
