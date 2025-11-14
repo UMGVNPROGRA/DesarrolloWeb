@@ -1591,6 +1591,9 @@
       "HospitalQueueSystem.Models/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "10.0.0"
+        },
         "compile": {
           "bin/placeholder/HospitalQueueSystem.Models.dll": {}
         },

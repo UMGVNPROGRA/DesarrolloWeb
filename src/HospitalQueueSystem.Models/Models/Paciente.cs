@@ -1,3 +1,6 @@
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace HospitalQueueSystem.Models
 {
     public class Paciente
@@ -18,7 +21,7 @@ namespace HospitalQueueSystem.Models
         [StringLength(10)]
         public string Genero { get; set; } = string.Empty;
         
-        [StringLength(200)]
+        [StringLength(500)]
         public string Sintomas { get; set; } = string.Empty;
         
         public DateTime FechaRegistro { get; set; } = DateTime.UtcNow;

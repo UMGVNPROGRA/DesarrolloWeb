@@ -1,0 +1,13 @@
+C:\Users\mike_\OneDrive\Documents\desarrollo web\ProyectoFinal\HospitalQueueSystem\src\HospitalQueueSystem.Models\obj\Debug\net10.0\HospitalQueueSystem.Models.csproj.AssemblyReference.cache
+C:\Users\mike_\OneDrive\Documents\desarrollo web\ProyectoFinal\HospitalQueueSystem\src\HospitalQueueSystem.Models\obj\Debug\net10.0\HospitalQueueSystem.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mike_\OneDrive\Documents\desarrollo web\ProyectoFinal\HospitalQueueSystem\src\HospitalQueueSystem.Models\obj\Debug\net10.0\HospitalQueueSystem.Models.AssemblyInfoInputs.cache
+C:\Users\mike_\OneDrive\Documents\desarrollo web\ProyectoFinal\HospitalQueueSystem\src\HospitalQueueSystem.Models\obj\Debug\net10.0\HospitalQueueSystem.Models.AssemblyInfo.cs
+C:\Users\mike_\OneDrive\Documents\desarrollo web\ProyectoFinal\HospitalQueueSystem\src\HospitalQueueSystem.Models\obj\Debug\net10.0\HospitalQueueSystem.Models.csproj.CoreCompileInputs.cache
+C:\Users\mike_\OneDrive\Documents\desarrollo web\ProyectoFinal\HospitalQueueSystem\src\HospitalQueueSystem.Models\obj\Debug\net10.0\HospitalQueueSystem.Models.sourcelink.json
+C:\Users\mike_\OneDrive\Documents\desarrollo web\ProyectoFinal\HospitalQueueSystem\src\HospitalQueueSystem.Models\bin\Debug\net10.0\HospitalQueueSystem.Models.deps.json
+C:\Users\mike_\OneDrive\Documents\desarrollo web\ProyectoFinal\HospitalQueueSystem\src\HospitalQueueSystem.Models\bin\Debug\net10.0\HospitalQueueSystem.Models.dll
+C:\Users\mike_\OneDrive\Documents\desarrollo web\ProyectoFinal\HospitalQueueSystem\src\HospitalQueueSystem.Models\bin\Debug\net10.0\HospitalQueueSystem.Models.pdb
+C:\Users\mike_\OneDrive\Documents\desarrollo web\ProyectoFinal\HospitalQueueSystem\src\HospitalQueueSystem.Models\obj\Debug\net10.0\HospitalQueueSystem.Models.dll
+C:\Users\mike_\OneDrive\Documents\desarrollo web\ProyectoFinal\HospitalQueueSystem\src\HospitalQueueSystem.Models\obj\Debug\net10.0\refint\HospitalQueueSystem.Models.dll
+C:\Users\mike_\OneDrive\Documents\desarrollo web\ProyectoFinal\HospitalQueueSystem\src\HospitalQueueSystem.Models\obj\Debug\net10.0\HospitalQueueSystem.Models.pdb
+C:\Users\mike_\OneDrive\Documents\desarrollo web\ProyectoFinal\HospitalQueueSystem\src\HospitalQueueSystem.Models\obj\Debug\net10.0\ref\HospitalQueueSystem.Models.dll
